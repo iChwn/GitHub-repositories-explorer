@@ -19,7 +19,6 @@ const Router = () => {
         <Route element={<AuthenticationRoute />} >
           <Route path="/*" element={<Navigate to={routeUrl.github} replace />} />
           <Route path={routeUrl.github} element={<GitHubUserSearch/>} />
-          <Route path={routeUrl.authentication} element={<div>auth page</div>} />
         </Route>
       </Routes>
     </Suspense>
